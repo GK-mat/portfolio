@@ -1,0 +1,502 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: initial;
+  text-decoration: none;
+}
+
+.resp {
+  display: none;
+}
+
+/* ---------------------
+フォント
+---------------------*/
+.c-title_lv1 {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* ---------------------
+ヘッダー
+---------------------*/
+header {
+  color: white;
+  padding: 15px 0;
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  z-index: 10000;
+  width: 100%;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header_left a {
+  color: white;
+  margin-left: 20px;
+  font-size: 32px;
+}
+
+.header_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+}
+
+.header_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.header_list a {
+  display: inline-block;
+  padding: 10px;
+  color: white;
+}
+
+.header_list a:hover {
+  background: #999999;
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+.header_list i {
+  padding-right: 10px;
+}
+
+.btn_contact {
+  background: #333333;
+}
+
+.nav_img {
+  display: none;
+}
+
+#resp_nav {
+  display: none;
+}
+
+/* ---------------------
+メイン
+---------------------*/
+main {
+  background: url(/img/white_sand.png);
+}
+
+/* --- top --- */
+.top {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top_title {
+  width: 500px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top_title h1 {
+  width: 550px;
+  font-size: 70px;
+  line-height: 1em;
+  letter-spacing: 8px;
+  width: auto;
+  display: inline-block;
+  text-align: left;
+}
+
+.top_title span {
+  font-size: 44px;
+}
+
+.top_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav_list {
+  font-size: 24px;
+  padding: 10px 20px;
+}
+
+.nav_list:hover {
+  background-color: #999999;
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+.nav_list a {
+  color: #666666;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+/* --- ポートフォリオ --- */
+.portfolio_wrapper .container {
+  padding-bottom: 100px;
+}
+
+.portfolio_title {
+  padding-bottom: 50px;
+}
+
+.portfolio_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 70px;
+}
+
+.portfolio {
+  width: calc(50% - 35px);
+  text-align: center;
+}
+
+.portfolio_name {
+  font-size: 24px;
+  font-weight: 600px;
+}
+
+.portfolio_images {
+  width: 100%;
+  max-width: 680px;
+  margin-top: 30px;
+}
+
+.portfolio_images img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.slide {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.change-btn-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 40px;
+}
+
+/* --- slick --- */
+.slick-arrow:before {
+  content: "";
+  width: 80px !important;
+  height: 100% !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #000;
+}
+
+.slick-next {
+  top: -15px;
+  right: 45% !important;
+}
+
+.slick-next::before {
+  content: '→ next';
+}
+
+.slick-next:hover::before {
+  background: #999999;
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+.slick-prev {
+  top: -15px;
+  left: 35% !important;
+}
+
+.slick-prev::before {
+  content: 'prev ←';
+}
+
+.slick-prev:hover::before {
+  background: #999999;
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+/* --- プロフィール --- */
+.profile_wrapper .container {
+  padding-bottom: 100px;
+}
+
+.profile_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  padding: 30px 0 0;
+}
+
+.profile_left {
+  width: 30%;
+}
+
+.profile_image {
+  width: 80%;
+  position: relative;
+}
+
+.profile_image::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.profile_image img {
+  position: absolute;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.profile_right {
+  width: 40%;
+  font-size: 18px;
+}
+
+/* --- スキルとサービス --- */
+.skill_wrapper {
+  padding-bottom: 100px;
+}
+
+.skill_wrapper .container {
+  padding: 0 0 50px;
+}
+
+.skill_title {
+  padding: 0 0 50px;
+}
+
+.skill_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skill {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skill_image {
+  text-align: center;
+  font-size: 100px;
+}
+
+.skill_name {
+  font-size: 24px;
+}
+
+.service_title {
+  padding: 100px 0 50px;
+}
+
+.service_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.service {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #eeeeee;
+}
+
+.service_name {
+  font-size: 24px;
+  font-weight: 400;
+  padding-top: 20px;
+}
+
+.service_image {
+  padding: 30px 0;
+  font-size: 70px;
+  text-align: center;
+}
+
+.service_description {
+  font-size: 18px;
+  padding: 0 20px 20px;
+}
+
+/* --- お問い合わせ --- */
+.contact__top {
+  margin: 0 0 50px;
+}
+
+.form {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.form input {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #999999;
+  margin: 0 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.form_name {
+  width: 50%;
+}
+
+.form_mail {
+  width: 50%;
+}
+
+.form textarea {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #999999;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.form textarea:focus {
+  border: 2px solid #333333;
+}
+
+.form_comment {
+  width: 50%;
+}
+
+.submit {
+  width: 50%;
+  padding: 10px 15px;
+}
+
+.submit:hover {
+  background: #999999;
+}
+
+/* ---------------------
+フッター
+---------------------*/
+footer {
+  background: url(/img/white_sand.png);
+}
+
+footer .container {
+  border-top: 3px solid #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer_left, .footer_right {
+  padding-top: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+/*# sourceMappingURL=style.css.map */
